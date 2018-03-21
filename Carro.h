@@ -7,20 +7,24 @@ using namespace std;
 
 class Carro
 {
-  private:
-    string marca;
-    int ano;
-    string cor;
+//Atributos que somente poderão ser acessados dentro do escopo da classe.
+private:
+  string marca;
+  int ano;
+  string cor;
 
-  public:
-    Carro();
-    Carro(string marca, int ano);
-    ~Carro();
-    void setMarca(string marca);
-    void setAno(int ano);
-    int getAno();
-    string getMarca();
-    static int pneus;
+//Atributos e métodos que podem ser acessados publicamente, sem ser necessario estar no escopo da classe.
+public:
+  Carro();
+  Carro(string marca, int ano);
+  ~Carro();
+  void setMarca(string marca);
+  void setAno(int ano);
+  int getAno();
+  string getMarca();
+
+  //Atributo da classe e não do objeto que instancia a classe.
+  static int pneus;
 };
 
 #endif
