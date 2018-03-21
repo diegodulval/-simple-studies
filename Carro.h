@@ -7,7 +7,11 @@ using namespace std;
 
 class Carro
 {
-
+  private:
+    string marca;
+    int ano;
+    string cor;
+    
 };
 
 #endif
