@@ -1,6 +1,6 @@
-console.log(checkPalindrome("aabaa"));
-console.log(checkPalindrome("a"));
+console.log(adjacentElementsProduct("aabaa"));
+console.log(adjacentElementsProduct("a"));
 
-function checkPalindrome(inputString) {
-    return inputString === [...inputString].reverse().join("");
+function adjacentElementsProduct(inputString) {
+    return [...inputString].reverse().join().toString();
 }
